@@ -1,4 +1,3 @@
-console.log('javascript client side file is loaded');
 
 const wheatherForm= document.querySelector('form');
 const search= document.querySelector('input');
