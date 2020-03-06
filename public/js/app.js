@@ -10,7 +10,7 @@ wheatherForm.addEventListener('submit',(e)=>{
     const adress= search.value;
     messegeOne.textContent='loading...';
     messegeTwo.textContent='';
-    fetch('http://localhost:3000/wheather?adress='+encodeURIComponent(adress)).then((res)=>{
+    fetch('/wheather?adress='+encodeURIComponent(adress)).then((res)=>{
         res.json().then((data)=>{
             if(data.error){
                 messegeOne.textContent= data.error;
